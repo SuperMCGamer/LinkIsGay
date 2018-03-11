@@ -2,12 +2,51 @@
 <head>
 <title>Zelda News</title>
 <style>
-body {
-  background-image: url(bg.jpg);
+.wrapper { 
+  height: 100%;
+  width: 100%;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+background-size: 1800% 1800%;
+
+-webkit-animation: rainbow 8s ease infinite;
+-z-animation: rainbow 8s ease infinite;
+-o-animation: rainbow 8s ease infinite;
+  animation: rainbow 8s ease infinite;}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+div.truth {
+background-image: url(bg.jpg);
 background-repeat: no-repeat;
   background-size: 100%;
 background-attachment: fixed;
 background-position: center center;
+height: 100%;
+width: 100%;
 }
 </style>
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -19,9 +58,11 @@ background-position: center center;
 
   gtag('config', 'UA-115516494-1');
 </script>
-
 </head>
 <body>
+<div class="wrapper">
+<div class="truth">&nbsp;</div>
+</div>
 <!-- Follow my Twitter @SuperMCGamer -->
 </body>
 </html>
